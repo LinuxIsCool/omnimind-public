@@ -2,47 +2,34 @@
 
 A Claude Code plugin marketplace for recursive capability amplification.
 
-## Prerequisites
+## Quick Start
+
+### 1. Add the Marketplace
+
+```
+/plugin marketplace add LinuxIsCool/omnimind-public
+```
+
+### 2. Install Plugins
+
+```
+/plugin install omnimind-engine@linuxiscool-omnimind-public
+/plugin install dialectic-engine@linuxiscool-omnimind-public
+```
+
+### 3. Manage
+
+```
+/plugin marketplace list                                       # List installed marketplaces
+/plugin marketplace update linuxiscool-omnimind-public          # Update marketplace to latest
+/plugin disable omnimind-engine@linuxiscool-omnimind-public     # Disable a plugin
+/plugin enable omnimind-engine@linuxiscool-omnimind-public      # Enable a plugin
+```
+
+### Prerequisites
 
 - [Claude Code](https://claude.ai/code) installed and authenticated
 - Node.js >= 20 (only if using the omnimind-substrate MCP server)
-
-## Quick Start
-
-Clone this repository:
-
-```bash
-git clone https://github.com/LinuxIsCool/omnimind-public.git
-cd omnimind-public
-```
-
-Install a plugin directly from the cloned directory:
-
-```bash
-claude --plugin-dir ./omnimind-engine
-claude --plugin-dir ./dialectic-engine
-```
-
-Or install both at once by pointing Claude Code at the marketplace root:
-
-```bash
-claude --plugin-dir .
-```
-
-### Persistent Installation
-
-To make the plugins available in every session for a project, add them to your project's `.claude/settings.json`:
-
-```json
-{
-  "plugins": [
-    "/absolute/path/to/omnimind-public/omnimind-engine",
-    "/absolute/path/to/omnimind-public/dialectic-engine"
-  ]
-}
-```
-
-Or for global availability across all projects, add to `~/.claude/settings.json`.
 
 ## Plugins
 
