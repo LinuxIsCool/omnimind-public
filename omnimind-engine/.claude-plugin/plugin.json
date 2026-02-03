@@ -1,0 +1,32 @@
+{
+  "name": "omnimind-engine",
+  "version": "1.1.0",
+  "description": "Recursive capability amplification engine with knowledge substrate integration. Each interaction compounds. Intelligence explodes.",
+  "author": {
+    "name": "OMNIMIND"
+  },
+  "keywords": ["intelligence", "amplification", "polymathic", "synthesis", "substrate", "memory"],
+  "commands": [
+    "./commands/amplify.md",
+    "./commands/explode.md"
+  ],
+  "agents": [
+    "./agents/davinci.md",
+    "./agents/ramanujan.md",
+    "./agents/synthesizer.md",
+    "./agents/vonneumann.md"
+  ],
+  "skills": ["./skills/"],
+  "hooks": ["./hooks/"],
+  "mcp": {
+    "servers": {
+      "omnimind-substrate": {
+        "command": "node",
+        "args": ["../omnimind-substrate/dist/mcp-server.js"],
+        "env": {
+          "OMNIMIND_ROOT": "~/.omnimind/knowledge"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "dialectic-engine",
+  "version": "1.0.0",
+  "description": "Intelligence amplification through adversarial synthesis. Every idea is stress-tested, attacked, defended, and synthesized into something stronger. Recursive improvement through structured conflict.",
+  "author": {
+    "name": "OMNIMIND"
+  },
+  "keywords": ["dialectic", "adversarial", "synthesis", "recursive-improvement", "red-team", "intelligence-explosion"],
+  "commands": [
+    "./commands/dialectic.md",
+    "./commands/redteam.md",
+    "./commands/steelman.md"
+  ],
+  "agents": [
+    "./agents/adversary.md",
+    "./agents/advocate.md",
+    "./agents/arbiter.md"
+  ],
+  "skills": ["./skills/"],
+  "hooks": [
+    "./hooks/dialectic-tracker.md"
+  ]
+}

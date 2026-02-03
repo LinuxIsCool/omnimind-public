@@ -1,0 +1,30 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "omnimind-marketplace",
+  "description": "OMNIMIND recursive capability amplification plugins",
+  "owner": {
+    "name": "OMNIMIND"
+  },
+  "plugins": [
+    {
+      "name": "omnimind-engine",
+      "description": "Recursive capability amplification engine with 4 agents (synthesizer, ramanujan, vonneumann, davinci), 2 commands (/amplify, /explode), 2 skills, and 1 hook for pattern compounding",
+      "version": "1.0.0",
+      "author": {
+        "name": "OMNIMIND"
+      },
+      "source": "./omnimind-engine",
+      "category": "productivity"
+    },
+    {
+      "name": "dialectic-engine",
+      "description": "Intelligence amplification through adversarial synthesis. Three agents (adversary, advocate, arbiter) implement Hegelian dialectic: thesis → antithesis → synthesis. Every idea emerges stronger.",
+      "version": "1.0.0",
+      "author": {
+        "name": "OMNIMIND"
+      },
+      "source": "./dialectic-engine",
+      "category": "reasoning"
+    }
+  ]
+}
